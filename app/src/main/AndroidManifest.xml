@@ -62,9 +62,6 @@
             android:name="com.example.customviews.animationactivities.FlyThereAndBackAnimationActivity"
             android:label="@string/app_name"/>
 
-        <activity
-            android:name="com.example.customviews.animationactivities.XmlAnimationActivity"
-            android:label="@string/app_name"/>
     </application>
 
 </manifest>

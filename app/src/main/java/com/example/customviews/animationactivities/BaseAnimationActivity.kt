@@ -1,12 +1,12 @@
 package com.example.customviews.animationactivities
 
-
+import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.customviews.R
-
 
 abstract class BaseAnimationActivity : AppCompatActivity() {
   protected lateinit var rocket: View
@@ -25,11 +25,12 @@ abstract class BaseAnimationActivity : AppCompatActivity() {
     frameLayout.setOnClickListener { onStartAnimation() }
   }
 
+  @RequiresApi(Build.VERSION_CODES.R)
   override fun onResume() {
     super.onResume()
 
     val displayMetrics = DisplayMetrics()
-    windowManager.defaultDisplay.getMetrics(displayMetrics)
+    this.display?.getRealMetrics(displayMetrics)
     screenHeight = displayMetrics.heightPixels.toFloat()
   }
 

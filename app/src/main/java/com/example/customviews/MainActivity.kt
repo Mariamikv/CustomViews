@@ -69,7 +69,5 @@ class MainActivity : AppCompatActivity() {
         animationData.add(RocketAnimationItem(getString(R.string.title_there_and_back),
             Intent(this, FlyThereAndBackAnimationActivity::class.java)))
 
-        animationData.add(RocketAnimationItem(getString(R.string.title_jump_and_blink),
-            Intent(this, XmlAnimationActivity::class.java)))
     }
 }
