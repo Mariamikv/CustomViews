@@ -18,6 +18,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.customviews.animationactivities.NoAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.LaunchRocketValueAnimatorAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.RotateRocketAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.AccelerateRocketAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.LaunchRocketObjectAnimatorAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.ColorAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.LaunchAndSpinAnimatorSetAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.LaunchAndSpinViewPropertyAnimatorAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.FlyWithDogeAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.WithListenerAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.FlyThereAndBackAnimationActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.example.customviews.animationactivities.XmlAnimationActivity"
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>

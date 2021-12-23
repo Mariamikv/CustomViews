@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/activity_base_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/animation_list_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
