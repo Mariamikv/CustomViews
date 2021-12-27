@@ -26,7 +26,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             override fun setOnClickListener(intent: Int) {
                 findNavController().navigate(intent)
             }
-
         })
 
         binding.recyclerView.apply {
@@ -38,7 +37,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     private fun setData(){
-
         animationData.add(RocketAnimationItem(getString(R.string.title_launch_rocket),
             R.id.action_homeFragment_to_accelerateRocketAnimationFragment))
 
