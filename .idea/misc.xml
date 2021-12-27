@@ -4,7 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/animation_list_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/base_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_accelerate_rocket_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_color_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_fly_there_and_back_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_fly_with_doge_animation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_launch_and_s_apin_view_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_launch_and_spin_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_launch_rocker_object_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_launch_rocket_value_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_rotate_rocket_animation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kvanto/AndroidStudioProjects/CustomViews/app/src/main/res/layout/fragment_with_listener_animation.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
