@@ -15,14 +15,16 @@ class RotateRocketAnimationFragment : BaseFragment<FragmentRotateRocketAnimation
         binding.root.setOnClickListener {
             val valueAnimator = ValueAnimator.ofFloat(0f, 360f)
 
-            valueAnimator.addUpdateListener {
-                val value = it.animatedValue as Float
-                binding.rocket.rotation = value
-            }
+            with(valueAnimator){
+                addUpdateListener {
+                    val value = it.animatedValue as Float
+                    binding.rocket.rotation = value
+                }
 
-            valueAnimator.interpolator = LinearInterpolator()
-            valueAnimator.duration = DEFAULT_ANIMATION_DURATION
-            valueAnimator.start()
+                interpolator = LinearInterpolator()
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 }

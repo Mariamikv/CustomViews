@@ -11,14 +11,16 @@ class AccelerateRocketAnimationFragment : BaseFragment<FragmentAccelerateRocketA
     override fun startCreating(inflater: LayoutInflater, container: ViewGroup?) {
         binding.root.setOnClickListener {
             val valueAnimator = ValueAnimator.ofFloat(0f, -screenHeight)
-            valueAnimator.addUpdateListener {
-                val value = it.animatedValue as Float
-                binding.rocket.translationY = value
-            }
+            with(valueAnimator) {
+                addUpdateListener {
+                    val value = it.animatedValue as Float
+                    binding.rocket.translationY = value
+                }
 
-            valueAnimator.interpolator = AccelerateInterpolator(1.5f)
-            valueAnimator.duration = DEFAULT_ANIMATION_DURATION
-            valueAnimator.start()
+                interpolator = AccelerateInterpolator(1.5f)
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 }

@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.customviews.R
 import com.example.customviews.adapters.RocketAdapter
 import com.example.customviews.databinding.FragmentHomeBinding
-import com.example.customviews.interfaces.SetOnClickListener
 import com.example.customviews.models.RocketAnimationItem
 import com.example.customviews.utils.BaseFragment
 
@@ -22,11 +21,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     private fun init(){
         setData()
 
-        animationItemsAdapter = RocketAdapter(object : SetOnClickListener{
-            override fun setOnClickListener(intent: Int) {
-                findNavController().navigate(intent)
-            }
-        })
+        animationItemsAdapter = RocketAdapter()
+        animationItemsAdapter.onClickListener { id ->
+            findNavController().navigate(id)
+        }
 
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(context)

@@ -18,11 +18,12 @@ class ColorAnimationFragment : BaseFragment<FragmentColorAnimationBinding>(Fragm
                 ContextCompat.getColor(requireContext(), R.color.purple_700)
             )
 
-            objectAnimator.repeatCount = 1
-            objectAnimator.repeatMode = ValueAnimator.REVERSE
-
-            objectAnimator.duration = DEFAULT_ANIMATION_DURATION
-            objectAnimator.start()
+            with(objectAnimator){
+                repeatCount = 1
+                repeatMode = ValueAnimator.REVERSE
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 }

@@ -16,30 +16,32 @@ class WithListenerAnimationFragment : BaseFragment<FragmentWithListenerAnimation
         binding.root.setOnClickListener {
             val animator = ValueAnimator.ofFloat(0f, -screenHeight)
 
-            animator.addUpdateListener {
-                val value = it.animatedValue as Float
-                binding.rocket.translationY = value
-                binding.doge.translationY = value
+            with(animator){
+                addUpdateListener {
+                    val value = it.animatedValue as Float
+                    binding.rocket.translationY = value
+                    binding.doge.translationY = value
+                }
+
+                addListener(object : Animator.AnimatorListener {
+                    override fun onAnimationStart(animation: Animator) {
+                        printToast("Doge took off")
+                    }
+
+                    override fun onAnimationEnd(animation: Animator) {
+                        printToast("print toast")
+                    }
+
+                    override fun onAnimationCancel(animation: Animator) {
+                    }
+
+                    override fun onAnimationRepeat(animation: Animator) {
+                    }
+                })
+
+                duration = 5000L
+                start()
             }
-
-            animator.addListener(object : Animator.AnimatorListener {
-                override fun onAnimationStart(animation: Animator) {
-                    Toast.makeText(requireContext(), "Doge took off", Toast.LENGTH_SHORT).show()
-                }
-
-                override fun onAnimationEnd(animation: Animator) {
-                    Toast.makeText(requireContext(), "Doge is on the moon", Toast.LENGTH_SHORT).show()
-                }
-
-                override fun onAnimationCancel(animation: Animator) {
-                }
-
-                override fun onAnimationRepeat(animation: Animator) {
-                }
-            })
-
-            animator.duration = 5000L
-            animator.start()
         }
     }
 }

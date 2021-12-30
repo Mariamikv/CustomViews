@@ -15,8 +15,10 @@ class LaunchRockerObjectAnimationFragment : BaseFragment<FragmentLaunchRockerObj
         binding.root.setOnClickListener {
             val objectAnimator = ObjectAnimator.ofFloat(binding.rocket, "translationY", 0f, -screenHeight)
 
-            objectAnimator.duration = DEFAULT_ANIMATION_DURATION
-            objectAnimator.start()
+            with(objectAnimator){
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 

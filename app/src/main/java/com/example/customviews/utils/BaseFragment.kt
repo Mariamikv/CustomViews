@@ -6,6 +6,7 @@ import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
@@ -46,9 +47,11 @@ abstract class BaseFragment<BD: ViewBinding>
         screenHeight = displayMetrics.heightPixels.toFloat()
     }
 
+    fun printToast(message: String){
+        Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+    }
+
     abstract fun startCreating(inflater: LayoutInflater, container: ViewGroup?)
 
-    companion object {
-        val DEFAULT_ANIMATION_DURATION = 2500L
-    }
+    protected val DEFAULT_ANIMATION_DURATION = 2500L
 }

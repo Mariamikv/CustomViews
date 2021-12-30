@@ -24,9 +24,11 @@ class FlyWithDogeAnimationFragment : BaseFragment<FragmentFlyWithDogeAnimationBi
             }
 
             val animatorSet = AnimatorSet()
-            animatorSet.play(positionAnimator).with(rotationAnimator)
-            animatorSet.duration = DEFAULT_ANIMATION_DURATION
-            animatorSet.start()
+            with(animatorSet){
+                play(positionAnimator).with(rotationAnimator)
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 }

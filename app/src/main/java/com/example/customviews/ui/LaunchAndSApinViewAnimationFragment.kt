@@ -24,10 +24,11 @@ class LaunchAndSApinViewAnimationFragment : BaseFragment<FragmentLaunchAndSApinV
             val rotationAnimator = ObjectAnimator.ofFloat(binding.rocket, "rotation", 0f, 180f)
 
             val animatorSet = AnimatorSet()
-
-            animatorSet.play(positionAnimator).with(rotationAnimator)
-            animatorSet.duration = DEFAULT_ANIMATION_DURATION
-            animatorSet.start()
+            with(animatorSet){
+                play(positionAnimator).with(rotationAnimator)
+                duration = DEFAULT_ANIMATION_DURATION
+                start()
+            }
         }
     }
 
