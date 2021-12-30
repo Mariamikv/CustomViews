@@ -8,7 +8,7 @@
             type="com.example.customviews.models.RocketAnimationItem" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -22,5 +22,5 @@
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 </layout>
