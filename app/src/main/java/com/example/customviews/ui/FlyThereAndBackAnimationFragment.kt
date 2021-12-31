@@ -11,16 +11,18 @@ class FlyThereAndBackAnimationFragment : BaseFragment<FragmentFlyThereAndBackAni
         binding.root.setOnClickListener {
             val animator = ValueAnimator.ofFloat(0f, -screenHeight)
 
-            animator.addUpdateListener {
-                val value = it.animatedValue as Float
-                binding.rocket.translationY = value
-                binding.doge.translationY = value
-            }
+            with(animator){
+                addUpdateListener {
+                    val value = it.animatedValue as Float
+                    binding.rocket.translationY = value
+                    binding.doge.translationY = value
+                }
 
-            animator.repeatMode = ValueAnimator.REVERSE
-            animator.repeatCount = 2
-            animator.duration = 700L
-            animator.start()
+                repeatMode = ValueAnimator.REVERSE
+                repeatCount = 2
+                duration = 700L
+                start()
+            }
         }
     }
 }

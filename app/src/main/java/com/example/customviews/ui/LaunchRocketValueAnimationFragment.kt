@@ -14,14 +14,16 @@ class LaunchRocketValueAnimationFragment : BaseFragment<FragmentLaunchRocketValu
     override fun startCreating(inflater: LayoutInflater, container: ViewGroup?) {
         binding.root.setOnClickListener {
             val valueAnimator = ValueAnimator.ofFloat(0f, -screenHeight)
-            valueAnimator.addUpdateListener {
-                val value = it.animatedValue as Float
-                binding.rocket.translationY = value
-            }
-            valueAnimator.interpolator = LinearInterpolator()
-            valueAnimator.duration = DEFAULT_ANIMATION_DURATION
+            with(valueAnimator){
+                addUpdateListener {
+                    val value = it.animatedValue as Float
+                    binding.rocket.translationY = value
+                }
+                interpolator = LinearInterpolator()
+                duration = DEFAULT_ANIMATION_DURATION
 
-            valueAnimator.start()
+                start()
+            }
         }
     }
 }
