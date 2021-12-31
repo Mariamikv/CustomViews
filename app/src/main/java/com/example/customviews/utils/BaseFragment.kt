@@ -47,7 +47,7 @@ abstract class BaseFragment<BD: ViewBinding>
         screenHeight = displayMetrics.heightPixels.toFloat()
     }
 
-    fun printToast(message: String){
+    protected fun printToast(message: String){
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
